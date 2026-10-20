@@ -6,6 +6,7 @@
 // @author          custom
 // @include         windhawk.exe
 // @compilerOptions -ldwmapi -lgdi32 -luser32 -lshell32 -lole32 -ladvapi32 -ld3d11 -ldxgi -ldcomp -luuid
+// @license         MIT
 // ==/WindhawkMod==
 
 // ==WindhawkModReadme==
@@ -68,54 +69,54 @@ own state. Windows of different desktops are never mixed.
 // ==WindhawkModSettings==
 /*
 - shortcut: Ctrl+Win
-  $name: Atalho de teclado
+  $name: Keyboard shortcut
   $description: >-
-    Combinação para ligar/desligar. Modificadores: Win, Ctrl, Alt, Shift.
-    Tecla: letra, número, F1-F24 ou Space. Só modificadores (ex.: Ctrl+Win)
-    também vale: dispara ao soltar, se nenhuma outra tecla foi apertada junto.
-    Deixe vazio para desativar.
+    Combination that turns Stage Manager on and off. Modifiers: Win, Ctrl,
+    Alt, Shift. Key: a letter, a digit, F1-F24 or Space. Modifiers alone
+    (e.g. Ctrl+Win) also work: the shortcut fires when they are released, if
+    no other key was pressed with them. Leave empty to disable.
 - touchpadGesture: off
-  $name: Gesto no touchpad
+  $name: Touchpad gesture
   $options:
-  - swipe: Deslizar 4 dedos para a direita ou esquerda
-  - off: Desativado
+  - swipe: Four-finger swipe left or right
+  - off: Disabled
 - gestureDistance: 12
-  $name: Distância do deslize (% da largura do touchpad)
+  $name: Swipe distance (% of the touchpad width)
 - cardWidth: 200
-  $name: Largura das miniaturas (px)
+  $name: Preview width (px)
 - iconSize: 40
-  $name: Tamanho dos ícones (%)
-  $description: 100% é o tamanho grande da versão anterior.
+  $name: Icon size (%)
+  $description: 100% is the large size of the previous version.
 - maxCards: 6
-  $name: Máximo de miniaturas na coluna
+  $name: Maximum number of previews in the column
 - stageSizing: inches
-  $name: Tamanho da janela central
+  $name: Size of the centered window
   $options:
-  - inches: Tamanho fixo em polegadas (diagonal)
-  - fit: Manter o tamanho da janela (reduzir só se não couber)
-  - fill: Sempre ocupar o tamanho máximo
+  - inches: Fixed size in inches (diagonal)
+  - fit: Keep the window's size (shrink only if it doesn't fit)
+  - fill: Always take the maximum size
 - stageInches: "5"
-  $name: Tamanho fixo da janela central (polegadas, diagonal)
+  $name: Fixed size of the centered window (inches, diagonal)
   $description: >-
-    Usado com "Tamanho fixo em polegadas". A janela tem a mesma proporção da
-    tela. Aceita decimais, ex.: 7,5
+    Used with "Fixed size in inches". The window has the same proportions as
+    the screen. Decimals are accepted, e.g. 7.5
 - screenInches: "14"
-  $name: Tamanho da sua tela (polegadas, diagonal)
-  $description: Usado para converter polegadas em pixels.
+  $name: Size of your screen (inches, diagonal)
+  $description: Used to convert inches to pixels.
 - stageSize: 90
-  $name: Tamanho máximo da janela central (% da área livre)
+  $name: Maximum size of the centered window (% of the free area)
 - switchAnimation: overlay
-  $name: Animação de troca de janelas
+  $name: Window switch animation
   $description: >-
-    Como a janela escolhida na coluna vai para o centro, e a do centro vai
-    para a coluna.
+    How the window chosen in the column goes to the center, and the one in the
+    center goes to the column.
   $options:
-  - overlay: Sobreposição (a escolhida vem por cima da atual, que depois vai para a coluna)
-  - genie: Genie (as janelas são "sugadas" para a coluna e saem dela)
-  - shrink: Encolher (a do centro encolhe e vai para a coluna por trás, enquanto a escolhida cresce saindo da coluna)
-  - off: Sem animação
+  - overlay: Overlay (the chosen window comes over the current one, which then goes to the column)
+  - genie: Genie (windows are "sucked" into the column and come out of it)
+  - shrink: Shrink (the center window shrinks and goes to the column behind, while the chosen one grows out of the column)
+  - off: No animation
 - genieDuration: 350
-  $name: Duração da animação de troca (ms)
+  $name: Switch animation duration (ms)
 */
 // ==/WindhawkModSettings==
 
